@@ -15,6 +15,6 @@ func TestExamplesBasic(t *testing.T) {
 	}, func(t *testing.T, output test_helper.TerraformOutput) {
 		gotEchoText, ok := output["vmss_id"].(string)
 		assert.True(t, ok)
-		assert.Regexp(t, regexp.MustCompile("/subscriptions/c24647bf-0c86-4408-8d29-6a67262a2701/resourceGroups/anoa-eus-vmss-dev-rg/providers/Microsoft.Compute/virtualMachineScaleSets/anoa-eus-vmss-dev-vmss"), gotEchoText)
+		assert.Regexp(t, regexp.MustCompile("/subscriptions/<<sub_id>>/resourceGroups/anoa-eus-vmss-dev-rg/providers/Microsoft.Compute/virtualMachineScaleSets/anoa-eus-vmss-dev-vmss"), gotEchoText)
 	})
 }
