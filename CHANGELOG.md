@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased](https://github.com/azurenoops/terraform-azurerm-overlays-linux-scaleset/tree/HEAD)
+## [v1.0.0](https://github.com/azurenoops/terraform-azurerm-overlays-linux-scaleset/tree/v1.0.0) (2023-03-28)
 
 **Merged pull requests:**
 
