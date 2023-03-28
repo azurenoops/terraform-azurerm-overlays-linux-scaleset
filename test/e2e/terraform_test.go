@@ -13,8 +13,8 @@ func TestExamplesBasic(t *testing.T) {
 	test_helper.RunE2ETest(t, "../../", "examples/basic", terraform.Options{
 		Upgrade: true,
 	}, func(t *testing.T, output test_helper.TerraformOutput) {
-		gotEchoText, ok := output["echo_text"].(string)
+		gotEchoText, ok := output["vmss_id"].(string)
 		assert.True(t, ok)
-		assert.Regexp(t, regexp.MustCompile("Hello, world!"), gotEchoText)
+		assert.Regexp(t, regexp.MustCompile("/subscriptions/<<sub_id>>/resourceGroups/anoa-eus-vmss-dev-rg/providers/Microsoft.Compute/virtualMachineScaleSets/anoa-eus-vmss-dev-vmss"), gotEchoText)
 	})
 }
