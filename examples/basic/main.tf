@@ -20,7 +20,7 @@ module "vmss_linux" {
   admin_password = "P@ssw0rd1234"
 
   # The following variables are used for sizing the VMs.
-  vms_size = "Standard_D2d_v5"
+  vms_size = "Standard_D2S_v3"
 
   # The following variables are used for the VM subnet.
   subnet_id = azurerm_subnet.hub1-subnets.id

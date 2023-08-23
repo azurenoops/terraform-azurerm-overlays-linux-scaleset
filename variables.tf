@@ -145,7 +145,7 @@ variable "os_disk_caching" {
 variable "os_disk_size_gb" {
   description = "Size of the OS disk in GB."
   type        = number
-  default     = 2
+  default     = null
 }
 
 variable "os_ephemeral_disk_enabled" {
@@ -157,7 +157,7 @@ variable "os_ephemeral_disk_enabled" {
 variable "os_ephemeral_disk_placement" {
   description = "Placement for the local ephemeral disk. Value can be `CacheDisk` or `ResourceDisk`. See https://learn.microsoft.com/en-us/azure/virtual-machines/ephemeral-os-disks."
   type        = string
-  default     = "ResourceDisk"
+  default     = "CacheDisk"
 }
 
 variable "os_disk_encryption_set_id" {
