@@ -145,7 +145,7 @@ variable "os_disk_caching" {
 variable "os_disk_size_gb" {
   description = "Size of the OS disk in GB."
   type        = number
-  default     = 32
+  default     = 2
 }
 
 variable "os_ephemeral_disk_enabled" {
